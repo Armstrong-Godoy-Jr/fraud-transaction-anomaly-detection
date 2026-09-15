@@ -54,9 +54,15 @@ This project simulates the full lifecycle of a fraud detection solution as it wo
 | 3 | Feature Engineering | ⬜ Not started |
 | 4 | Modeling & Theoretical Performance | ⬜ Not started |
 | 5 | Detection Strategy Layer | ⬜ Not started |
-| 6 | Deployment Simulation | ⬜ Not started |
+| 6 | Deployment: API, Containerization & Versioning | ⬜ Not started |
 | 7 | Monitoring & Dashboard | ⬜ Not started |
 | 8 | Documentation & Governance | ⬜ Not started |
+
+**Phase 6 detail:** wrap the trained model in a scoring API (FastAPI), containerize it with Docker, and version the resulting image — so the model is something another person (or system) could actually call, not just a `.pkl` file sitting in a notebook. This mirrors "déployer en production des modèles" from the target job description, and the same Dockerfile pattern would carry over to a real cloud target like Azure or IBM Cloud Pak for Data.
+
+## Companion Article
+
+This project is being written up as a long-form Medium article in parallel with the build — see [`docs/medium_article/`](docs/medium_article/) for the running draft. Each phase gets its section drafted right after that phase's technical work is done, so the reasoning and decisions are captured fresh rather than reconstructed at the end.
 
 ## Disclaimer
 
