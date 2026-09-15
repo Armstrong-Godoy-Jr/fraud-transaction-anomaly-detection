@@ -64,6 +64,10 @@ This project simulates the full lifecycle of a fraud detection solution as it wo
 
 This project is being written up as a long-form Medium article in parallel with the build — see [`docs/medium_article/`](docs/medium_article/) for the running draft. Each phase gets its section drafted right after that phase's technical work is done, so the reasoning and decisions are captured fresh rather than reconstructed at the end.
 
+## Contributing / Workflow
+
+This project follows a `main`/`develop`/`feature` branching model with Conventional Commits and Semantic Versioning. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the full workflow and [`CHANGELOG.md`](CHANGELOG.md) for release history.
+
 ## Disclaimer
 
 This project uses entirely synthetic data. It does not represent, reference, or use any real financial institution's proprietary data, models, or systems. It is built as an educational/portfolio simulation of industry practice.
