@@ -29,12 +29,12 @@ This project simulates the full lifecycle of a fraud detection solution as it wo
 ├── notebooks/             # Exploratory and analytical notebooks
 ├── src/
 │   ├── features/          # Feature engineering code
-│   ├── models/             # Model training/evaluation code
+│   ├── models/            # Model training/evaluation code
 │   ├── pipeline/          # Scoring/inference pipeline (batch + API sim)
 │   └── monitoring/        # Drift detection, performance tracking
-├── dashboards/             # Analyst-facing dashboard app
-├── tests/                  # Unit tests
-└── .github/workflows/      # CI (lint, test)
+├── dashboards/            # Analyst-facing dashboard app
+├── tests/                 # Unit tests
+└── .github/workflows/     # CI (lint, test)
 ```
 
 ## Tech Stack
@@ -58,7 +58,8 @@ This project simulates the full lifecycle of a fraud detection solution as it wo
 | 7 | Monitoring & Dashboard | ⬜ Not started |
 | 8 | Documentation & Governance | ⬜ Not started |
 
-**Phase 6 detail:** wrap the trained model in a scoring API (FastAPI), containerize it with Docker, and version the resulting image — so the model is something another person (or system) could actually call, not just a `.pkl` file sitting in a notebook. This mirrors "déployer en production des modèles" from the target job description, and the same Dockerfile pattern would carry over to a real cloud target like Azure or IBM Cloud Pak for Data.
+**Phase 6 detail:** wrap the trained model in a scoring API (FastAPI), containerize it with Docker, and version the resulting image — so the model is something another person (or system) could actually call, not just a `.pkl` file sitting in a notebook. The same Dockerfile pattern would carry over to a real cloud target like Azure or IBM Cloud Pak for Data.
+Before fully replacing existing rule-based decisions, the model runs in shadow mode — scoring live transactions and logging what it *would* decide, without affecting real outcomes — so its performance can be validated against decisions it didn't influence, not just backtested historical data.
 
 ## Companion Article
 
