@@ -14,8 +14,8 @@ Each section is drafted in its own file in this folder right after the correspon
 
 | Section | Maps to | File | Status |
 |---|---|---|---|
-| Hook / why this project | Intro | `intro.md` | ⬜ |
-| The business problem | Phase 0 | `phase0_charter.md` | ⬜ |
+| Hook / why this project | Intro | `intro.md` | 🚧 Draft v1 |
+| The business problem | Phase 0 | `phase0_charter.md` | 🚧 Draft v1 |
 | Setting up like a real team would | Phase 1 | `phase1_setup.md` | ⬜ |
 | What the data actually shows | Phase 2 | `phase2_eda.md` | ⬜ |
 | Finding signal: feature engineering | Phase 3 | `phase3_features.md` | ⬜ |
